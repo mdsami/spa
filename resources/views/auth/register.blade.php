@@ -26,6 +26,20 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                            <label for="email" class="col-md-4 control-label">Username</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="text" class="form-control" name="username" value="{{ old('username') }}" required>
+
+                                @if ($errors->has('username'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('username') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
                             <div class="col-md-6">
@@ -38,6 +52,47 @@
                                 @endif
                             </div>
                         </div>
+
+                        <div class="form-group">
+                            <label for="email" class="col-md-4 control-label">Picture</label>
+
+                            <div class="col-md-6">
+                                    <input type="file" class="form-control-file"  name="profile_image" id="exampleFormControlFile1" accept="image/*">
+             
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                            <label for="email" class="col-md-4 control-label">Phone</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="text" class="form-control" name="phone" value="{{ old('phone') }}" required>
+
+                                @if ($errors->has('phone'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('phone') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                            <label for="email" class="col-md-4 control-label">Gender</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="text" class="form-control" name="gender" value="{{ old('gender') }}" required>
+
+                                @if ($errors->has('gender'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('gender') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 control-label">Password</label>

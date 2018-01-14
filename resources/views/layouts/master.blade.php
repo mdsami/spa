@@ -84,6 +84,12 @@
                     </a>
                 </li>
 
+                <li class="active"> <a href="#">
+                        <div class="icon"> <i class="fa fa-exchange" aria-hidden="true"></i> </div>
+                        <div class="title">Logout</div>
+                    </a>
+                </li>
+
             </ul>
         </div>
 
@@ -99,8 +105,8 @@
                         <li class="logo"> <a class="navbar-brand" href="#"><?php //echo APP_NAME;?></a> </li>
                         <li>
                             <button type="button" class="navbar-toggle">
-                                <?php //if(PROFILE_IMG){?>
-                                <img class="profile-img" src="images/<?php //echo PROFILE_IMG;?>">
+                                 <!--  Add php profile code here -->
+                                <!-- <img class="profile-img" src="images/   "> -->
 
                                 <img class="profile-img" src="assets/images/profile.png">
 
